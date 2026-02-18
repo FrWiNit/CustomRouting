@@ -23,7 +23,7 @@ public struct RouterView<Content: View>: View, @MainActor Router {
     var addNavigationView: Bool = true
     @ViewBuilder var content: (Router) -> Content
     
-    init(
+    public init(
         screenStack: (Binding<[AnyDestination]>)? = nil,
         addNavigationView: Bool = true,
         content: @escaping (Router) -> Content
